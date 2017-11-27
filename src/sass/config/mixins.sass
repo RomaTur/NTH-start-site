@@ -1,0 +1,14 @@
+
+@function rem($px)
+    @return $px / 16px+0rem
+
+@mixin bg-img($url)
+    background-image: url($url)
+
+@mixin tablet
+    @media (max-width:768px)
+        @content
+
+@mixin phone
+    @media (max-width:480px)
+        @content
